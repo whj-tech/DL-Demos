@@ -3,7 +3,7 @@
 1. Clone the git repo:
 
 ```shell
-git clone https://github.com/SingleZombie/DL-Demos.git
+git clone https://github.com/whj-tech/DL-Demos.git
 ```
 
 2. Run the installation command:
