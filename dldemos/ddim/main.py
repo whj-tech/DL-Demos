@@ -6,11 +6,11 @@ import einops
 import torch
 import torch.nn as nn
 
-from dldemos.ddim.configs import configs
-from dldemos.ddim.dataset import get_dataloader
-from dldemos.ddim.ddim import DDIM
-from dldemos.ddim.ddpm import DDPM
-from dldemos.ddim.network import UNet
+from configs import configs
+from dataset import get_dataloader
+from ddim import DDIM
+from ddpm import DDPM
+from network import UNet
 
 
 def train(ddpm: DDPM,

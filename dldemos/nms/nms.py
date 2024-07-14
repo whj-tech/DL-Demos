@@ -1,8 +1,8 @@
 import numpy as np
 from PIL import Image
 
-from dldemos.nms.iou import iou
-from dldemos.nms.show_bbox import draw_bbox
+from iou import iou
+from show_bbox import draw_bbox
 
 
 class BoxRenderer():

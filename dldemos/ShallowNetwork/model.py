@@ -2,7 +2,7 @@ import abc
 
 import numpy as np
 
-from dldemos.utils import relu, relu_de, sigmoid
+from function import relu, relu_de, sigmoid
 
 
 class BaseRegressionModel(metaclass=abc.ABCMeta):

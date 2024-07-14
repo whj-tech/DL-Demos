@@ -1,8 +1,8 @@
-from dldemos.AdvancedOptimizer.model import DeepNetwork, train
-from dldemos.AdvancedOptimizer.optimizer import (Adam, GradientDescent,
+from model import DeepNetwork, train
+from optimizer import (Adam, GradientDescent,
                                                  Momentum, RMSProp,
                                                  get_hyperbola_func)
-from dldemos.DeepNetwork.dataset import get_cat_set
+from dataset import get_cat_set
 
 
 def main():

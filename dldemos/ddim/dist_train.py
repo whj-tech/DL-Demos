@@ -7,10 +7,10 @@ import torch.distributed as dist
 import torch.nn as nn
 from torch.nn.parallel import DistributedDataParallel
 
-from dldemos.ddim.configs import configs
-from dldemos.ddim.dataset import get_dataloader
-from dldemos.ddim.ddpm import DDPM
-from dldemos.ddim.network import UNet
+from .configs import configs
+from dataset import get_dataloader
+from ddpm import DDPM
+from network import UNet
 
 
 def reduce_sum(tensor):

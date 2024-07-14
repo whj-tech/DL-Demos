@@ -3,7 +3,7 @@ import torch.nn as nn
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import DataLoader, Dataset
 
-from dldemos.attention.dataset import generate_date, load_date_data
+from dataset import generate_date, load_date_data
 
 EMBEDDING_LENGTH = 128
 OUTPUT_LENGTH = 10

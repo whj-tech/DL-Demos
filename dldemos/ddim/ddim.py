@@ -1,7 +1,7 @@
 import torch
 from tqdm import tqdm
 
-from dldemos.ddim.ddpm import DDPM
+from ddpm import DDPM
 
 
 class DDIM(DDPM):

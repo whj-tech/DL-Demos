@@ -3,10 +3,10 @@ import time
 import torch
 import torch.nn as nn
 
-from dldemos.Transformer.data_load import (get_batch_indices, load_cn_vocab,
+from data_load import (get_batch_indices, load_cn_vocab,
                                            load_en_vocab, load_train_data,
                                            maxlen)
-from dldemos.Transformer.model import Transformer
+from model import Transformer
 
 # Config
 batch_size = 64
