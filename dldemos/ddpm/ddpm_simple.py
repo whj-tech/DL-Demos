@@ -21,10 +21,10 @@ class DDPM():
         self.alpha_bars = alpha_bars
 
     def sample_forward(self, x, t, eps=None):
-        alpha_bar = self.alpha_bars[t].reshape(-1, 1, 1, 1)
+        alpha_bar = self.alpha_bars[t].reshape(-1, 1, 1, 1)#时刻T的加权系数
         if eps is None:
             eps = torch.randn_like(x)
-        res = eps * torch.sqrt(1 - alpha_bar) + torch.sqrt(alpha_bar) * x
+        res = eps * torch.sqrt(1 - alpha_bar) + torch.sqrt(alpha_bar) * x #eps为随机生成的噪音，服从标准正太分布
         return res
 
     def sample_backward(self, img_shape, net, device, simple_var=True):

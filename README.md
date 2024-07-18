@@ -26,27 +26,23 @@ Demos for deep learning.
 01. Logistic Regression
 02. Shallow Nerual Network
 03. Deep Nerual Network (MLP)
-04. Parameter Initialization
-05. Regularization
-06. Advanced Optimizer (mini-batch, momentum, Adam)
-07. Multiclass Classification with TensorFlow and PyTorch
-08. NumPy Convolution 2D
-09. Basic CNN
-10. ResNet
-11. NMS
-12. ~~My YOLO model~~
-13. Letter level language model with PyTorch
-14. Sentiment analysis using Glove with PyTorch
-15. Date translation attention model with PyTorch
-16. Transformer cn-en translation with PyTorch
+04. Regularization
+05. Advanced Optimizer (mini-batch, momentum, Adam)
+06. Multiclass Classification with TensorFlow and PyTorch
+07. NMS
+08. Letter level language model with PyTorch
+09. Sentiment analysis using Glove with PyTorch
+10. Date translation attention model with PyTorch
+11. Transformer cn-en translation with PyTorch
 
 ## Generative Model
 
 1. VAE with PyTorch
-2. DDPM with PyTorch
-3. PixelCNN with PyTorch
-4. VQVAE with PyTorch
-5. DDIM with PyTorch
+2. VQGAN with PyTorch
+3. DDPM with PyTorch
+4. PixelCNN with PyTorch
+5. VQVAE with PyTorch
+6. DDIM with PyTorch
 
 ## Others
 

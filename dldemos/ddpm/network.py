@@ -200,7 +200,7 @@ class UNet(nn.Module):
 
     def forward(self, x, t):
         n = t.shape[0]
-        t = self.pe(t)
+        t = self.pe(t)#对512个数据每个T进行位置编吗
         encoder_outs = []
         for pe_linear, encoder, down in zip(self.pe_linears_en, self.encoders,
                                             self.downs):

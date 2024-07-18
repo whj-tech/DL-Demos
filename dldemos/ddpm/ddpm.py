@@ -81,7 +81,7 @@ def visualize_forward():
     import einops
     import numpy as np
 
-    from dldemos.ddpm.dataset import get_dataloader
+    from dataset import get_dataloader
 
     n_steps = 100
     device = 'cuda'

@@ -32,7 +32,7 @@ def train(ddpm: DDPM, net, device='cuda', ckpt_path='dldemos/ddpm/model.pth'):
         for x, _ in dataloader:
             current_batch_size = x.shape[0]
             x = x.to(device)
-            t = torch.randint(0, n_steps, (current_batch_size, )).to(device)
+            t = torch.randint(0, n_steps, (current_batch_size, )).to(device)#对512的T在1-1000中随机采样
             eps = torch.randn_like(x).to(device)
             x_t = ddpm.sample_forward(x, t, eps)
             eps_theta = net(x_t, t.reshape(current_batch_size, 1))
@@ -90,7 +90,7 @@ if __name__ == '__main__':
     net = build_network(config, n_steps)
     ddpm = DDPM(device, n_steps)
 
-    # train(ddpm, net, device=device, ckpt_path=model_path)
+    train(ddpm, net, device=device, ckpt_path=model_path)
 
     net.load_state_dict(torch.load(model_path))
     sample_imgs(ddpm, net, 'work_dirs/diffusion.jpg', device=device)
